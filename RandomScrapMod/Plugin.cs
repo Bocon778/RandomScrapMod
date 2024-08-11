@@ -13,7 +13,7 @@ namespace RandomScrapMod
     {
         const string GUID = "bocon.randomscrapmod";
         const string NAME = "Random Scrap Mod";
-        const string VERSION = "1.0.0";
+        const string VERSION = "1.0.2";
 
         public static Plugin instance;
 
@@ -27,7 +27,7 @@ namespace RandomScrapMod
             Item barrelOLuck = bundle.LoadAsset<Item>("Assets/RandomScrapMod/Barrel.asset");
             NetworkPrefabs.RegisterNetworkPrefab(barrelOLuck.spawnPrefab);
             Utilities.FixMixerGroups(barrelOLuck.spawnPrefab);
-            Items.RegisterScrap(barrelOLuck,5,Levels.LevelTypes.All);
+            Items.RegisterScrap(barrelOLuck,20,Levels.LevelTypes.All);
 
             Logger.LogInfo("Patched Item Tutorial");
         }

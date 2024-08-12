@@ -13,7 +13,7 @@ namespace RandomScrapMod
     {
         const string GUID = "bocon.randomscrapmod";
         const string NAME = "Random Scrap Mod";
-        const string VERSION = "1.0.3";
+        const string VERSION = "1.0.1";
 
         public static Plugin instance;
 
@@ -28,8 +28,13 @@ namespace RandomScrapMod
             NetworkPrefabs.RegisterNetworkPrefab(barrelOLuck.spawnPrefab);
             Utilities.FixMixerGroups(barrelOLuck.spawnPrefab);
             Items.RegisterScrap(barrelOLuck,20,Levels.LevelTypes.All);
+            Logger.LogInfo("Patched Item BarrelOLuck");
 
-            Logger.LogInfo("Patched Item Tutorial");
+            Item bearPlushie = bundle.LoadAsset<Item>("Assets/RandomScrapMod/BearPlushie.asset");
+            NetworkPrefabs.RegisterNetworkPrefab(bearPlushie.spawnPrefab);
+            Utilities.FixMixerGroups(bearPlushie.spawnPrefab);
+            Items.RegisterScrap(bearPlushie,35,Levels.LevelTypes.All);
+            Logger.LogInfo("Patched Item BearPlushie");
         }
     }
 }

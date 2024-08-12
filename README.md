@@ -4,8 +4,11 @@ My first mod for Lethal Company that adds scrap items.
 
 ## Barrel O' Luck
 
-- Where did this come from??
   <img src="https://github.com/user-attachments/assets/b16c882c-62a8-42e3-9156-b96d469dbb89" alt="Barrel Icon" style="width:200px;height:150px;border-radius:8px;">
+
+  ## Bear Plushie
+
+  <img src="https://github.com/user-attachments/assets/976a7575-bc0e-4d2f-9b31-251866798d02" alt="Barrel Icon" style="width:200px;height:150px;border-radius:8px;">
 
 <details>
   <summary>Credits</summary>

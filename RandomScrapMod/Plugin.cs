@@ -13,7 +13,7 @@ namespace RandomScrapMod
     {
         const string GUID = "bocon.randomscrapmod";
         const string NAME = "Random Scrap Mod";
-        const string VERSION = "1.0.2";
+        const string VERSION = "1.0.3";
 
         public static Plugin instance;
 
